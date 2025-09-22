@@ -36,7 +36,7 @@ export default function ITJobApplicationForm() {
             linkedin
         }
 
-        axios.post('http://localhost:3000/applications', application)
+        axios.post('https://job-portal-server-2-re3d.onrender.com/applications', application)
             .then(res => {
                 console.log(res.data)
                 let timerInterval;

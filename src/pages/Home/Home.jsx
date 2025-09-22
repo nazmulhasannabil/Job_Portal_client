@@ -4,7 +4,7 @@ import HotJobs from './HotJobs'
 
 const Home = () => {
 
-  // const jobpromise = fetch('http://localhost:3000/jobs').then(res=>res.json());
+  // const jobpromise = fetch('https://job-portal-server-2-re3d.onrender.com/jobs').then(res=>res.json());
 
   return (
     <div>
