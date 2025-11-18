@@ -71,11 +71,10 @@ export default function ITJobApplicationForm() {
 
 
     return (
-        <div className=' min-h-screen'>
+        <div className='min-h-screen py-8'>
 
-
-            <div className="max-w-4xl mx-auto p-6 ">
-                <h2 className="text-2xl font-semibold text-teal-500 mb-4 flex items-center gap-2">
+            <div className="max-w-4xl mx-auto p-4 md:p-6">
+                <h2 className="text-xl md:text-2xl font-semibold text-teal-500 mb-4 flex items-center gap-2">
                     <FaTools className="text-teal-500" />
                     IT Job Application Form
                 </h2>
@@ -85,7 +84,7 @@ export default function ITJobApplicationForm() {
                     className="space-y-4">
                     {/* Full Name */}
                     <div>
-                        <label htmlFor="name" className="block text-teal-500 font-medium mb-1 flex items-center gap-1">
+                        <label htmlFor="name" className="block text-teal-500 font-medium mb-1 flex items-center gap-1 text-sm md:text-base">
                             <MdPerson /> Full Name
                         </label>
                         <input
@@ -93,13 +92,13 @@ export default function ITJobApplicationForm() {
                             id="name"
                             name="name"
                             required
-                            className="w-full px-4 py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50"
+                            className="w-full px-3 py-2 md:px-4 md:py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50 text-sm md:text-base"
                         />
                     </div>
 
                     {/* Email */}
                     <div>
-                        <label htmlFor="email" className="block text-teal-500 font-medium mb-1 flex items-center gap-1">
+                        <label htmlFor="email" className="block text-teal-500 font-medium mb-1 flex items-center gap-1 text-sm md:text-base">
                             <MdEmail /> Email Address
                         </label>
                         <input
@@ -107,26 +106,26 @@ export default function ITJobApplicationForm() {
                             id="email"
                             name="email"
                             required
-                            className="w-full px-4 py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50"
+                            className="w-full px-3 py-2 md:px-4 md:py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50 text-sm md:text-base"
                         />
                     </div>
 
                     {/* Phone */}
                     <div>
-                        <label htmlFor="phone" className="block text-teal-500 font-medium mb-1 flex items-center gap-1">
+                        <label htmlFor="phone" className="block text-teal-500 font-medium mb-1 flex items-center gap-1 text-sm md:text-base">
                             <MdPhone /> Phone Number
                         </label>
                         <input
                             type="tel"
                             id="phone"
                             name="phone"
-                            className="w-full px-4 py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50"
+                            className="w-full px-3 py-2 md:px-4 md:py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50 text-sm md:text-base"
                         />
                     </div>
 
                     {/* Skills */}
                     <div>
-                        <label htmlFor="skills" className="block text-teal-500 font-medium mb-1 flex items-center gap-1">
+                        <label htmlFor="skills" className="block text-teal-500 font-medium mb-1 flex items-center gap-1 text-sm md:text-base">
                             <FaTools /> Technical Skills
                         </label>
                         <textarea
@@ -134,14 +133,14 @@ export default function ITJobApplicationForm() {
                             name="skills"
                             rows="4"
                             placeholder="List your relevant IT skills..."
-                            className="w-full px-4 py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50"
+                            className="w-full px-3 py-2 md:px-4 md:py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50 text-sm md:text-base"
                         />
                     </div>
 
 
                     {/* Portfolio */}
                     <div>
-                        <label htmlFor="portfolio" className="block text-teal-500 font-medium mb-1 flex items-center gap-1">
+                        <label htmlFor="portfolio" className="block text-teal-500 font-medium mb-1 flex items-center gap-1 text-sm md:text-base">
                             <MdWorkOutline /> Portfolio Link
                         </label>
                         <input
@@ -149,12 +148,12 @@ export default function ITJobApplicationForm() {
                             id="portfolio"
                             name="portfolio"
                             placeholder="Your portfolio or personal website link..."
-                            className="w-full px-4 py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50"
+                            className="w-full px-3 py-2 md:px-4 md:py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50 text-sm md:text-base"
                         />
                     </div>
                     {/* Github link  */}
                     <div>
-                        <label htmlFor="Github" className="block text-teal-500 font-medium mb-1 flex items-center gap-1">
+                        <label htmlFor="Github" className="block text-teal-500 font-medium mb-1 flex items-center gap-1 text-sm md:text-base">
                             <MdWorkOutline /> GitHub Link
                         </label>
                         <input
@@ -162,12 +161,12 @@ export default function ITJobApplicationForm() {
                             id="github"
                             name="github"
                             placeholder="Your GitHub profile link..."
-                            className="w-full px-4 py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50"
+                            className="w-full px-3 py-2 md:px-4 md:py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50 text-sm md:text-base"
                         />
                     </div>
                     {/* Github link  */}
                     <div>
-                        <label htmlFor="Linkedin" className="block text-teal-500 font-medium mb-1 flex items-center gap-1">
+                        <label htmlFor="Linkedin" className="block text-teal-500 font-medium mb-1 flex items-center gap-1 text-sm md:text-base">
                             <MdWorkOutline /> Linkedin Link
                         </label>
                         <input
@@ -175,14 +174,14 @@ export default function ITJobApplicationForm() {
                             id="linkedin"
                             name="linkedin"
                             placeholder="Your linkedin profile link..."
-                            className="w-full px-4 py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50"
+                            className="w-full px-3 py-2 md:px-4 md:py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50 text-sm md:text-base"
                         />
                     </div>
 
 
                     {/* Resume link */}
                     <div>
-                        <label htmlFor="resume" className="block text-teal-500 font-medium mb-1 flex items-center gap-1">
+                        <label htmlFor="resume" className="block text-teal-500 font-medium mb-1 flex items-center gap-1 text-sm md:text-base">
                             <MdUploadFile /> Upload Resume
                         </label>
                         <input
@@ -190,16 +189,15 @@ export default function ITJobApplicationForm() {
                             id="resume"
                             name="resume"
                             placeholder="Your resume link..."
-                            className="w-full px-4 py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50"
+                            className="w-full px-3 py-2 md:px-4 md:py-2 border border-teal-500/50 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500/50 text-sm md:text-base"
                         />
                     </div>
 
                     {/* Submit Button */}
                     <div className="pt-4">
                         <button
-
                             type="submit"
-                            className="w-full bg-teal-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-teal-600 transition flex items-center justify-center gap-2"
+                            className="w-full bg-teal-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-teal-600 transition flex items-center justify-center gap-2 text-sm md:text-base"
                         >
                             <FaTools /> Submit Application
                         </button>

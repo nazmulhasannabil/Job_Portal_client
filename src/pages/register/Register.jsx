@@ -24,23 +24,26 @@ const Register = () => {
             })
     }
     return (
-        <div className="hero bg-base-200 min-h-screen">
-            <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero bg-base-200 min-h-screen py-8">
+            <div className="hero-content flex-col lg:flex-row-reverse gap-8">
                 <div className="text-center lg:text-left">
-
-                    <Lottie animationData={registerLotties} loop={true} style={{ width: 400, height: 400 }} />
+                    <Lottie animationData={registerLotties} loop={true} style={{ width: '100%', maxWidth: '400px', height: 'auto' }} />
                 </div>
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <div className="card-body">
-                        <h1 className="text-5xl font-bold">Register now!</h1>
+                        <h1 className="text-3xl md:text-5xl font-bold text-center">Register now!</h1>
                         <SocialLogin />
                         <form onSubmit={handleRegister}>
-                            <fieldset className="fieldset">
-                                <label className="label">Email</label>
-                                <input type="email" name="email" className="input" placeholder="Email" />
-                                <label className="label">Password</label>
-                                <input type="password" name="password" className="input" placeholder="Password" />
-                                <button className="btn btn-neutral mt-4">Register</button>
+                            <fieldset className="fieldset space-y-4">
+                                <div>
+                                    <label className="label text-sm md:text-base">Email</label>
+                                    <input type="email" name="email" className="input input-bordered w-full" placeholder="Email" />
+                                </div>
+                                <div>
+                                    <label className="label text-sm md:text-base">Password</label>
+                                    <input type="password" name="password" className="input input-bordered w-full" placeholder="Password" />
+                                </div>
+                                <button className="btn btn-neutral mt-4 w-full">Register</button>
                             </fieldset>
                         </form>
                     </div>

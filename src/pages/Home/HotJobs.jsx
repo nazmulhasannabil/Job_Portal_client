@@ -25,7 +25,7 @@ const HotJobs = () => {
 
   return (
     <div className="px-4 py-8 bg-white">
-      <h2 className="text-4xl font-bold text-center text-gray-900 mb-6">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-900 mb-6">
         🔥 Hot Jobs of the Day 🔥
       </h2>
 
@@ -33,13 +33,12 @@ const HotJobs = () => {
         <p className="text-center text-gray-500">Loading jobs...</p>
       ) : (
         <>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6'>
             {
               jobs.map(job => <JobCard key={job._id} job={job} />)
             }
           </div>
         </>
-
       )}
     </div>
   );

@@ -1,14 +1,13 @@
-
 const ApplicationStats = () => {
     return (
-        <div className="stats shadow flex justify-center">
-            <div className="stat">
+        <div className="stats shadow flex flex-col md:flex-row justify-center w-full">
+            <div className="stat place-items-center">
                 <div className="stat-figure text-primary">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        className="inline-block h-8 w-8 stroke-current"
+                        className="inline-block h-6 w-6 md:h-8 md:w-8 stroke-current"
                     >
                         <path
                             strokeLinecap="round"
@@ -18,18 +17,18 @@ const ApplicationStats = () => {
                         ></path>
                     </svg>
                 </div>
-                <div className="stat-title">Total Likes</div>
-                <div className="stat-value text-primary">25.6K</div>
-                <div className="stat-desc">21% more than last month</div>
+                <div className="stat-title text-sm md:text-base">Total Likes</div>
+                <div className="stat-value text-primary text-2xl md:text-4xl">25.6K</div>
+                <div className="stat-desc text-xs md:text-sm">21% more than last month</div>
             </div>
 
-            <div className="stat">
+            <div className="stat place-items-center">
                 <div className="stat-figure text-secondary">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
-                        className="inline-block h-8 w-8 stroke-current"
+                        className="inline-block h-6 w-6 md:h-8 md:w-8 stroke-current"
                     >
                         <path
                             strokeLinecap="round"
@@ -39,22 +38,22 @@ const ApplicationStats = () => {
                         ></path>
                     </svg>
                 </div>
-                <div className="stat-title">Page Views</div>
-                <div className="stat-value text-secondary">2.6M</div>
-                <div className="stat-desc">21% more than last month</div>
+                <div className="stat-title text-sm md:text-base">Page Views</div>
+                <div className="stat-value text-secondary text-2xl md:text-4xl">2.6M</div>
+                <div className="stat-desc text-xs md:text-sm">21% more than last month</div>
             </div>
 
-            <div className="stat">
+            <div className="stat place-items-center">
                 <div className="stat-figure text-secondary">
-                    <div className="avatar avatar-online">
-                        <div className="w-16 rounded-full">
+                    <div className="avatar online">
+                        <div className="w-12 md:w-16 rounded-full">
                             <img src="https://img.daisyui.com/images/profile/demo/anakeen@192.webp" />
                         </div>
                     </div>
                 </div>
-                <div className="stat-value">86%</div>
-                <div className="stat-title">Tasks done</div>
-                <div className="stat-desc text-secondary">31 tasks remaining</div>
+                <div className="stat-value text-2xl md:text-4xl">86%</div>
+                <div className="stat-title text-sm md:text-base">Tasks done</div>
+                <div className="stat-desc text-secondary text-xs md:text-sm">31 tasks remaining</div>
             </div>
         </div>
     )

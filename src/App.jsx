@@ -6,10 +6,13 @@ import './App.css'
 function App() {
 
   return (
-    <>
-  
-     
-    </>
+    <div className="min-h-screen flex flex-col">
+      {/* Header will be included through RootLayout */}
+      <main className="flex-grow">
+        {/* Content will be rendered through React Router */}
+      </main>
+      {/* Footer will be included through RootLayout */}
+    </div>
   )
 }
 

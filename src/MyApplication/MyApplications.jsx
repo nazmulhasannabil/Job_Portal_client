@@ -7,7 +7,7 @@ import UseAuth from '../Hooks/UseAuth'
 const MyApplications = () => {
   const {user} = UseAuth();
   return (
-    <div className='px-[8%]'>
+    <div className='px-4 md:px-[8%] py-8'>
       <ApplicationStats></ApplicationStats>
       <Suspense fallback={'Loading your Applicaions'}>
         <ApplicationList
